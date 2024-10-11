@@ -1,0 +1,61 @@
+/* src/components/Calculator.css */
+
+body {
+    background-color: #f4f4f4; /* Cor de fundo da página */
+    font-family: 'Arial', sans-serif; /* Fonte para a página */
+  }
+  
+  .calculator {
+    width: 320px; /* Largura da calculadora */
+    margin: 50px auto; /* Centraliza a calculadora na página */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    background: linear-gradient(135deg, #6ab1f3, #1e90ff); /* Gradiente de fundo */
+  }
+  
+  input {
+    width: 100%; /* Largura total */
+    height: 60px; /* Altura do campo de entrada */
+    font-size: 32px; /* Tamanho da fonte */
+    text-align: right; /* Alinhamento do texto à direita */
+    margin-bottom: 15px; /* Espaçamento inferior */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Remove bordas padrão */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra interna */
+  }
+  
+  .buttons {
+    display: grid; /* Usa grid para layout */
+    grid-template-columns: repeat(4, 1fr); /* Quatro colunas */
+    gap: 15px; /* Espaçamento entre os botões */
+  }
+  
+  button {
+    height: 60px; /* Altura dos botões */
+    font-size: 24px; /* Tamanho da fonte dos botões */
+    background-color: #ffffff; /* Cor de fundo dos botões */
+    border: none; /* Remove bordas padrão */
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: background-color 0.3s, transform 0.1s; /* Transições suaves */
+    cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+  }
+  
+  button:hover {
+    background-color: #e0e0e0; /* Cor de fundo ao passar o mouse */
+  }
+  
+  button:active {
+    transform: scale(0.95); /* Levemente reduz o botão ao clicar */
+  }
+  
+  button:nth-child(4n) {
+    background-color: #ff9800; /* Cor diferente para botões de operações */
+    color: white; /* Cor do texto dos botões de operações */
+  }
+  
+  button:nth-child(4n):hover {
+    background-color: #fb8c00; /* Cor ao passar o mouse nos botões de operações */
+  }
+  
